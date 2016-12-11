@@ -12,7 +12,7 @@ vignette: >
 ```{r, include = FALSE}
 source("../R/requireR.R")
 ```
-The requireR package can be used to modularize your code. Using requireR, your system components can be separated and combined easier. The requireR packages is inspired by the JavaScript library *requireJS*. 
+The requireR package can be used to modularize your code. Using requireR, your system components can be separated and combined easier. The requireR packages is inspired by the JavaScript library 'RequireJS'<http://requirejs.org/>. 
 
 Files will become **selfcontained**. Modules can contain private variables and functions, and only communicate via their interface variables.
 
