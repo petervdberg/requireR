@@ -8,21 +8,21 @@ Depedencies are always **explicified**. Each file contains all its dependencies,
 
 A typical use case is the following:
 
-#hello.R<br>
+*hello.R<br>
 requireR(function() {<br>
-  "hello"<br>
+&nbsp;&nbsp;"hello"<br>
 }<br>
 
-#world.R<br>
+*world.R<br>
 requireR(function() {<br>
-  "world"<br>
+&nbsp;"world"<br>
 })<br>
 
 requireR(<br>
-  "hello.R",<br>
-  "world.R",<br>
-  function(hello, world) {<br>
-    paste(hello, world)<br>
+&nbsp;"hello.R",<br>
+&nbsp;"world.R",<br>
+&nbsp;function(hello, world) {<br>
+&nbsp;&nbsp;paste(hello, world)<br>
 })<br>
 
 As you can see, all code is wrapped within the requireR function. The variables 'hello' and 'world' can only be used within the wrapped function, and do not end up in the global scope.
