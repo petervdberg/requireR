@@ -1,6 +1,6 @@
 Package: requireR
 Title: R source code modularizer
-Version: 0.0.0.9000
+Version: 1.0.0.9000
 Authors@R: person("Peter", "van den Berg", email = "peter_v_d_berg@hotmail.com", role = c("aut", "cre"))
 Description: Modularizes source code. Keeps the global environment clean,
     explicifies interdependencies. Inspired by RequireJS.
