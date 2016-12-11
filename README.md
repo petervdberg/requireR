@@ -2,12 +2,12 @@ The requireR package can be used to modularize your code. Using requireR, your s
 
 Files will become **selfcontained**. Modules can contain private variables and functions, and only communicate via their interface variables. The global environment can stay **clean**. (almost) no variables end up in the global environment, so no more name collisions or related problems. Depedencies are always **explicified**. Each file contains all its dependencies, so you directly see where the file is dependent on. A typical use case is the following:
 
-*hello.R<br>
+*hello.R*<br>
 requireR(function() {<br>
 &nbsp;&nbsp;"hello"<br>
 }<br>
 
-*world.R<br>
+*world.R*<br>
 requireR(function() {<br>
 &nbsp;"world"<br>
 })<br>
