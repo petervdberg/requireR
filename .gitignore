@@ -48,16 +48,12 @@ Temporary Items
 
 #R files
 .Rproj
+.RBuildignore
 .user
-
 .Rhistory
-
 .RData
-
-.Ruserdata
-
-*
+.Ruserdata*
 .db
 custom/
 cache*/
-
+.Rproj.user*/
