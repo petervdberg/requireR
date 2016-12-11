@@ -28,6 +28,6 @@ requireR(<br>
 As you can see, all code is wrapped within the requireR function. The variables 'hello' and 'world' can only be used within the wrapped function, and do not end up in the global scope.
 
 You can also use requireR within your module-less code (although this is not recommended)
-hello <- requireR("hello.R")
-world <- requireR("world.R")
-paste(hello, world)
+hello <- requireR("hello.R")<br>
+world <- requireR("world.R")<br>
+paste(hello, world)<br>
