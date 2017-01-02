@@ -13,21 +13,23 @@ requireR(...)
 Loads given files and modularizes the given function
 }
 \examples{
-##hello.R
-#requireR(function() {
-#  "hello"
-#})
+\dontrun{
+#hello.R
+requireR(function() {
+  "hello"
+})
 
-##world.R
-#requireR(function() {
-#  "world"
-#})
+#world.R
+requireR(function() {
+  "world"
+})
 
-#requireR(
-#  "hello.R",
-#   "world.R",
-#   function(hello, world) {
-#     paste(hello, world)
-#   })
+requireR(
+  "hello.R",
+   "world.R",
+   function(hello, world) {
+     paste(hello, world)
+   })
+}
 }
 

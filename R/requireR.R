@@ -2,22 +2,24 @@
 #'
 #' @param ... A set of filenames, and/or ending with the modularizable function.
 #' @examples
-#' ##hello.R
-#' #requireR(function() {
-#' #  "hello"
-#' #})
+#' \dontrun{
+#' #hello.R
+#' requireR(function() {
+#'   "hello"
+#' })
 #'
-#' ##world.R
-#' #requireR(function() {
-#' #  "world"
-#' #})
+#' #world.R
+#' requireR(function() {
+#'   "world"
+#' })
 #'
-#' #requireR(
-#' #  "hello.R",
-#' #   "world.R",
-#' #   function(hello, world) {
-#' #     paste(hello, world)
-#' #   })
+#' requireR(
+#'   "hello.R",
+#'    "world.R",
+#'    function(hello, world) {
+#'      paste(hello, world)
+#'    })
+#' }
 #' @export
 requireR <- function(...) {
   load_dependency <- function(dependency) {
